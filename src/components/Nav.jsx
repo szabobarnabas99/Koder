@@ -50,8 +50,8 @@ const Nav = () => {
                     ))}
                 </ul>
                 {/* button */}
-                <button className="hidden relative md:flex lg:ml-[90px] md:ml-[40px]">
-                    Button
+                <button className="hidden relative md:flex lg:ml-[90px] md:ml-[40px] text-black bg-gradient-to-br from-pink-500 to-orange-400 hover:font-bold duration-500  font-medium rounded-3xl text-sm px-5 py-2.5 text-center ">
+                    Beszéljünk!
                 </button>
             </div>
         </div>
