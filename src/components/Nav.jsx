@@ -39,7 +39,7 @@ const Nav = () => {
                     }`}
                 >
                     {Links.map((link) => (
-                        <li className="md:ml-8 md:my-0 my-7 font-semibold">
+                        <li className="md:ml-8 md:my-0 my-7 font-semibold first:ml-0">
                             <a
                                 href={link.link}
                                 className="md:text-gray-800 hover:bg-gradient-to-r from-orange-600 to-pink-700 inline-block hover:text-transparent max-md:text-white bg-clip-text duration-500 "
@@ -50,6 +50,9 @@ const Nav = () => {
                     ))}
                 </ul>
                 {/* button */}
+                <button className="hidden relative md:flex lg:ml-[90px] md:ml-[40px]">
+                    Button
+                </button>
             </div>
         </div>
     );

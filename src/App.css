@@ -27,6 +27,10 @@ body.dark-mode {
 }
 
 @layer components {
+    ::selection {
+        color: #000;
+        background: #f7418f;
+    }
     h1 {
         font-family: "Montserrat", sans-serif;
         font-weight: 600;

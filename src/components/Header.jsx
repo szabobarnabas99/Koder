@@ -7,8 +7,8 @@ import "../App.css";
 const Header = () => {
     return (
         <div>
-            <div className="w-full h-[100vh] flex justify-center items-center flex-col cursor-default">
-                <h1 className="h1 text-center w-[900px]">
+            <div className="w-full h-dvh flex justify-center items-center flex-col cursor-default">
+                <h1 className="h1 text-center">
                     Szükséged van
                     <br /> egy{" "}
                     <IoIosGlobe className="text-red-500 inline-block text-7xl z-10 pb-2" />{" "}
@@ -25,7 +25,11 @@ const Header = () => {
                 </p>
                 <SlArrowDownCircle className="text-5xl mt-[40px]" />
             </div>
-            <div className="absolute w-full h-full  right-0 bottom-0 z-0">
+            <div className="flex justify-between md:pl-[72px] md:pr-[81px] md:pb-[40px] cursor-default">
+                <p>koderagency@koder.hu</p>
+                <p>Koder Agency</p>
+            </div>
+            <div className="absolute w-full h-[100vh]  right-0 bottom-0 z-0">
                 <ParticlesContainer />
             </div>
         </div>
