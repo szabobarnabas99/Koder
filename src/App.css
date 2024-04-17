@@ -8,6 +8,7 @@
 @tailwind utilities;
 
 :root {
+    box-sizing: border-box;
     --font-sora: "Sora", sans-serif;
     --font-code: "Source Code Pro", monospace;
     --font-grotesk: "Space Grotesk", sans-serif;
@@ -35,23 +36,35 @@ body.dark-mode {
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
         text-transform: uppercase;
-        font-size: 2.5rem;
+        font-size: 59px;
+    }
+    h2 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 48px;
     }
 
     .h1 {
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
-        font-size: 3.5rem;
+        font-size: 59px;
         z-index: 10;
         text-transform: uppercase;
+    }
+
+    h3 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 35px;
     }
 
     p {
         font-family: "Montserrat", sans-serif;
         font-weight: 300;
-        font-size: 0.75rem;
+        font-size: 16px;
         z-index: 10;
-        font-weight: bold;
     }
 
     .tsparticles {
@@ -60,15 +73,6 @@ body.dark-mode {
         z-index: -1;
     }
 
-    .vl {
-        border: 10px solid;
-        border-image-slice: 1;
-        border-width: 5px;
-        border-image-source: linear-gradient(to top, #ea580c, #be185d);
-        border-top: 0;
-        border-right: 0;
-        border-bottom: 0;
-    }
     .gradient-border {
         border-image-source: linear-gradient(to top, #ea580c, #be185d);
     }
@@ -130,5 +134,22 @@ body.dark-mode {
         background-color: var(--text-color);
     }
 
+    .work {
+        color: #fff;
+
+        transition: all 0.3s ease 0s;
+    }
+    .work:hover {
+        transform: translateY(-3px);
+        border-bottom: 5px solid red;
+        transition: all 0.3s ease 0s;
+    }
+
+    .dot {
+        position: absolute;
+        bottom: 0;
+        left: 50%; /* Center the dot horizontally */
+        transform: translateX(-50%); /* Adjust the horizontal position */
+    }
     /* Media Query for small screens */
 }

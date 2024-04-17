@@ -1,14 +1,46 @@
-import { FaGithub, FaLinkedinIn, FaFacebookF, FaYoutube } from "react-icons/fa";
+import {
+    FaGithub,
+    FaLinkedinIn,
+    FaFacebookF,
+    FaYoutube,
+    FaInstagram,
+} from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
+import { socialprofils } from "../ContentOption";
 
 const Socials = () => {
     return (
-        <div className="flex flex-col absolute pb-[5rem] self-end mr-[1rem] gap-y-5 text-2xl z-10">
-            <FaGithub className="socials" />
-            <FaLinkedinIn className="socials" />
-            <FaFacebookF className="socials" />
-            <RiInstagramFill className="socials" />
-            <FaYoutube className="socials" />
+        <div className="flex flex-col   mr-[1rem] gap-y-3 text-2xl z-10 items-center w-full text-center">
+            <a
+                href={socialprofils.github}
+                className="hover:text-black duration-500"
+            >
+                <FaGithub className="socials" />
+            </a>
+            <a
+                href={socialprofils.instagram}
+                className="hover:text-black duration-500"
+            >
+                <FaInstagram className="socials" />
+            </a>
+            <a
+                href={socialprofils.facebook}
+                className="hover:text-black duration-500"
+            >
+                <FaFacebookF className="socials" />
+            </a>
+            <a
+                href={socialprofils.linkedin}
+                className="hover:text-black duration-500"
+            >
+                <FaLinkedinIn className="socials" />
+            </a>
+            <a
+                href={socialprofils.youtube}
+                className="hover:text-black duration-500"
+            >
+                <FaYoutube className="socials" />
+            </a>
         </div>
     );
 };
