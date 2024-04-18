@@ -83,11 +83,11 @@ const Contact = () => {
                                     />
                                 </div>
                                 <div className="relative">
-                                    <BiSolidMessage className="absolute top-[50%]  text-[20px] transform -translate-y-[10px] left-[10px] text-gray-500" />
+                                    <BiSolidMessage className="absolute top-[50%]  text-[20px] transform -translate-y-[68px] left-[10px] text-gray-500" />
                                     <input
                                         placeholder="Üzenet"
                                         type="text"
-                                        className="bg-black border-[1px] border-gray-400 rounded-md pl-[40px] focus:outline-none focus:border-orange-600 w-[521px] h-[178px] align-text-top"
+                                        className="bg-black border-[1px] border-gray-400 rounded-md pl-[40px] focus:outline-none focus:border-orange-600 w-[521px] h-[178px] align-text-top pb-[120px]"
                                     />
                                 </div>
                             </div>

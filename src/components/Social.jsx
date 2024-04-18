@@ -12,7 +12,7 @@ import { socialprofils } from "../ContentOption";
 
 export const Socialicons = (params) => {
     return (
-        <div className="stick_follow_icon z-30 ">
+        <div className="stick_follow_icon z-30 max-md:hidden">
             <ul>
                 {socialprofils.twitter && (
                     <li>

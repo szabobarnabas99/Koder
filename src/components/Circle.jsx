@@ -5,17 +5,23 @@ import { collabApps } from "../constans";
 
 const Circle = () => {
     return (
-        <div className="bg-black text-white">
-            <div className="flex pt-[175px] md:ml-[176px]">
-                <div className="flex flex-col w-1/2">
-                    <div className="flex flex-row pb-[18px] items-center">
+        <div className="bg-black text-white max-md:w-[screen] h-full">
+            <div className="flex flex-row pb-[18px] items-center max-md:pb-[48px] max-md:justify-center md:hidden">
+                <IoIosArrowForward className="text-red-500 text-[35px] max-md:text-[20px]" />
+                <h3 className="flex items-center justify-center text-[35px] max-md:text-[20px]">
+                    Mivel dolgozunk?
+                </h3>
+            </div>
+            <div className="flex md:pt-[175px] md:ml-[176px] max-md:flex-col max-md:w-screen">
+                <div className="flex flex-col md:w-1/2 max-md:justify-center max-md:text-center max-md:items-center">
+                    <div className="flex flex-row pb-[18px] items-center max-md:hidden">
                         <IoIosArrowForward className="text-red-500 text-[35px]" />
-                        <h3 className="flex items-center justify-center text-[35px]">
+                        <h3 className="flex items-center justify-center text-[35px] ">
                             Mivel dolgozunk?
                         </h3>
                     </div>
-                    <div>
-                        <p>
+                    <div className="max-md:w-[80%]">
+                        <p className="p font-normal normal-case max-md:text-[16px]">
                             Lorem ipsum dolor, sit amet consectetur adipisicing
                             elit. Ullam voluptate ipsa ea expedita nobis illo
                             est iure facilis veniam earum. Lorem ipsum dolor,
@@ -25,16 +31,16 @@ const Circle = () => {
                         </p>
                     </div>
                 </div>
-                <div className="lg:ml-auto xl:w-[38rem] mt-4">
+                <div className="lg:ml-auto xl:w-[38rem] mt-4 max-md:order-first pb-[57px] max-md:scale-[85%]">
                     <div className="relative left-1/2 flex w-[22rem] aspect-square border border-n-6 rounded-full -translate-x-1/2 scale:75 md:scale-100">
                         <div className="flex w-60 aspect-square m-auto border border-n-6 rounded-full">
                             <div className="w-[6rem] aspect-square m-auto p-[0.2rem] bg-conic-gradient rounded-full">
-                                <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full">
+                                <div className="flex items-center justify-center w-full h-full bg-n-8 rounded-full ">
                                     <img
                                         src={logo}
                                         width={48}
                                         height={48}
-                                        alt="brainwave"
+                                        alt="logo"
                                     />
                                 </div>
                             </div>

@@ -23,9 +23,9 @@ const Testimonials = () => {
                     <ReviewComponent />
                 </div>
             </div>
-            <div className="flex items-center justify-center ml-0">
+            <div className="flex items-center justify-center ml-0 mt-[40px] pb-[40px]">
                 <a href="#projects">
-                    <SlArrowDownCircle className="text-5xl mt-[40px] mb-[40px]" />
+                    <SlArrowDownCircle className="text-5xl " />
                 </a>
             </div>
         </div>
